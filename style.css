@@ -3,23 +3,63 @@
     padding: 0;
 }
 
+@keyframes ltr {
+    from {left:0%;}
+    to {left:20%;}
+  }
+
+  @keyframes navanimate {
+    from {height: 0%;}
+    to {height: 80px;}
+  }
+
+  @keyframes ltrmargin {
+    from {margin-left: 0%;}
+    to {margin-right: 20%;}
+  }
+
+  @keyframes fadertl {
+    from {opacity:0;margin-left: 70%;}
+    to {opacity:1;margin-left: 40%;}
+  }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+  @keyframes bttmargin {
+    from {margin-top: 100px;}
+    to {margin-top: 20px;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+
 .first {
     background-color: rgba(245, 245, 245, 0.889);
     height: 550px;
 }
 
-.first > img {
+.first>img {
     width: 50%;
     margin-left: 40%;
     margin-top: -40px;
     height: 590px;
+    animation-name: fadertl;
+    animation-duration: 1s;
 }
 
 .navbar {
     display: flex;
     position: fixed;
     z-index: 1;
-    height: 20px;
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
@@ -27,7 +67,9 @@
     align-items: center;
     opacity: 0.8;
     background-color: white;
-    
+    animation-name: navanimate;
+    animation-duration: 1s;
+
 }
 
 .navbar__logoText {
@@ -38,28 +80,34 @@
     margin-left: 18%;
     margin-right: 30px;
     opacity: 2;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+
 }
 
-.navbar__logoText > h4 {
+.navbar__logoText>h4 {
     margin-left: 10px;
     font-size: 30px;
 }
 
-.navbar__links > a {
+.navbar__links>a {
     color: grey;
     text-decoration: none;
     font-size: 16px;
     margin-right: 5px;
     font-weight: bold;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+
 }
 
 @media (max-width: 576px) {
-    .first > img {
-      margin-left: 0;
-      width: 100%;
+    .first>img {
+        margin-left: 0;
+        width: 100%;
     }
 
-     .navbar__links > a {
+    .navbar__links>a {
         color: black;
         text-decoration: none;
         font-size: 16px;
@@ -72,36 +120,38 @@
         right: 20%;
     }
 
-       }
+}
 
-.navbar__links > a:hover {
+.navbar__links>a:hover {
     text-decoration: underline;
 }
 
 .navbar__links {
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 
 .first__overlayText {
     position: absolute;
     top: 140px;
     left: 20%;
+    animation-name: ltr;
+  animation-duration: 1s;
 }
 
-.first__overlayText > h2 {
+.first__overlayText>h2 {
     font-size: 52px;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.first__overlayText > p {
+.first__overlayText>p {
     color: rgb(28, 3, 3);
     font-weight: 600;
     margin-top: 10px;
     line-height: 1.5;
 }
 
-.first__overlayText > button {
+.first__overlayText>button {
     margin-top: 30px;
     height: 40px;
     width: 150px;
@@ -113,17 +163,19 @@
     box-shadow: 20px 50px 60px #888888;
 }
 
-.first__overlayText > button:hover {
+.first__overlayText>button:hover {
     background-color: lighten(#343a40);
 }
 
-.second > h4 {
+.second>h4 {
     font-size: 35px;
     margin-left: 40%;
     font-weight: 300;
     margin-top: 60px;
-  line-height: 1.5; 
-  word-spacing: 1.5;
+    line-height: 1.5;
+    word-spacing: 1.5;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 .second__texts {
@@ -132,6 +184,8 @@
     justify-content: center;
     margin-left: 23%;
     margin-top: 20px;
+    animation-name: bttmargin;
+    animation-duration: 1s;
 }
 
 .bordertop {
@@ -139,7 +193,7 @@
     width: 70%;
 }
 
-.bordertop > h4{
+.bordertop>h4 {
     font-weight: 600;
     font-size: 25px;
     margin-top: 50px;
@@ -158,6 +212,8 @@
     margin-top: 30px;
     background-color: rgba(245, 245, 245, 0.889);
     padding-bottom: 50px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 .third__main {
@@ -165,7 +221,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    margin:auto;
+    margin: auto;
 }
 
 .third__images {
@@ -173,11 +229,11 @@
     margin-top: 30px;
 }
 
-.third__image3{
-    clip: 0px,20px,20px,0px;
+.third__image3 {
+    clip: 0px, 20px, 20px, 0px;
     margin-top: 20px;
     box-shadow: 20px 50px 60px #888888;
-    
+
 }
 
 .third__image2 {
@@ -189,10 +245,12 @@
 
 .third__image1 {
     box-shadow: 20px 50px 60px #888888;
+    animation-name: rtlmargin;
+    animation-duration: 1s;
 }
 
 
-.third__images > img {
+.third__images>img {
     height: 200px;
 }
 
@@ -200,13 +258,13 @@
     border-top: 1px solid black;
 }
 
-.third__quote > h4 {
+.third__quote>h4 {
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.third__quote > p {
+.third__quote>p {
     font-size: 20px;
     color: grey;
 }
@@ -224,26 +282,60 @@
     align-items: center;
     margin: auto;
     margin-top: 100px;
+
 }
 
-.fourth__image1{
+.fourth__image1 {
     width: 20%;
     box-shadow: 20px 50px 60px #888888;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    cursor: pointer;
 }
 
-.fourth__image2{
+.fourth__image1:hover {
+    box-shadow: 30px 60px 40px #888888;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fourth__image2 {
     width: 20%;
     box-shadow: 20px 50px 60px #888888;
+    animation-name: spin;
+    animation-duration: 3000ms;
 }
 
-.fourth__image3{
+.fourth__image2:hover {
+    box-shadow: 30px 60px 40px #888888;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fourth__image3 {
     width: 30%;
     box-shadow: 20px 50px 60px #888888;
+    animation-name: spin;
+    animation-duration: 4000ms;
 }
 
-.fourth__image4{
+.fourth__image3:hover {
+    box-shadow: 30px 60px 40px #888888;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fourth__image4 {
     width: 25%;
     box-shadow: 20px 50px 60px #888888;
+    animation-name: spin;
+    animation-duration: 4500ms;
+}
+
+.fourth__image4:hover {
+    box-shadow: 30px 60px 40px #888888;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .fifth {
@@ -255,15 +347,19 @@
     padding-top: 90px;
 }
 
-.fifth__stats{
+.fifth__stats {
     width: 40%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
-.fifth__text > h3 {
+.fifth__text>h3 {
     font-size: 35px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
-.fifth__stats > h3 {
+.fifth__stats>h3 {
     font-size: 30px;
     margin-bottom: 50px;
 }
@@ -278,12 +374,12 @@
     margin-top: 10px;
 }
 
-.fifth__statsNumbers1 > h2 {
+.fifth__statsNumbers1>h2 {
     font-size: 70px;
     font-weight: 700;
 }
 
-.fifth__statsNumbers1 > p {
+.fifth__statsNumbers1>p {
     color: grey;
     font-size: 20px;
     margin-top: 10px;
@@ -292,14 +388,14 @@
 .fifth__statsNumbers2 {
     width: 40%;
     margin-top: 10px;
-} 
+}
 
-.fifth__statsNumbers2 > h2 {
+.fifth__statsNumbers2>h2 {
     font-size: 70px;
     font-weight: 700;
 }
 
-.fifth__statsNumbers2 > p {
+.fifth__statsNumbers2>p {
     color: grey;
     font-size: 20px;
     margin-top: 10px;
@@ -319,8 +415,11 @@
     border-top: 1px solid black;
     padding-top: 20px;
     width: 30%;
+    animation-name: ltrmargin;
+    animation-duration: 1000ms;
 }
-.sixth__text > h3 {
+
+.sixth__text>h3 {
     font-size: 2rem;
     color: #343a40;
 }
@@ -330,7 +429,7 @@
     border-bottom: 0.5px solid #adb5bd;
 }
 
-.sixth__quote > h3 {
+.sixth__quote>h3 {
     font-size: 1.7rem;
     line-height: 1.4;
     color: #343a40;
@@ -339,51 +438,51 @@
 }
 
 @media (max-width: 576px) {
-    .second > h4 {
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 25px;
-      padding: 5px;
-      text-align: center;
-     }
+    .second>h4 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 25px;
+        padding: 5px;
+        text-align: center;
+    }
 
-     .second__texts {
+    .second__texts {
         display: flex;
         flex-direction: column;
-     }
+    }
 
-     .third__main {
+    .third__main {
         display: flex;
         flex-direction: column;
-     }
+    }
 
-     .third__quote {
+    .third__quote {
         margin-top: 10px;
-     }
+    }
 
-     .fifth{
+    .fifth {
         display: flex;
         flex-direction: column;
-     }
+    }
 
-     .fifth__text > h3 {
+    .fifth__text>h3 {
         margin-bottom: 15px;
-     }
+    }
 
-     .fifth__stats {
+    .fifth__stats {
         width: 100%;
-     }
+    }
 
-     .fifth__stats > h3 {
+    .fifth__stats>h3 {
         color: grey;
-     }
+    }
 
-     .fifth__statsNumbers{
+    .fifth__statsNumbers {
         display: flex;
         flex-direction: column;
-     }
+    }
 
-     .fifth__statsNumbers1 {
+    .fifth__statsNumbers1 {
         width: 100%;
     }
 
@@ -392,15 +491,15 @@
         align-items: center;
     }
 
-    .fifth__statsNumbers1 > h2 {
+    .fifth__statsNumbers1>h2 {
         font-size: 40px;
     }
 
-    .fifth__statsNumbers2 > h2 {
+    .fifth__statsNumbers2>h2 {
         font-size: 40px;
     }
 
-    .sixth{
+    .sixth {
         display: flex;
         flex-direction: column;
     }
@@ -413,5 +512,4 @@
         margin-top: 20px;
         width: 100%;
     }
-    }
-
+}
