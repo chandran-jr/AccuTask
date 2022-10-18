@@ -101,27 +101,6 @@
 
 }
 
-@media (max-width: 576px) {
-    .first>img {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .navbar__links>a {
-        color: black;
-        text-decoration: none;
-        font-size: 16px;
-        margin-right: 5px;
-        font-weight: bold;
-    }
-
-    .first__overlayText {
-        text-align: center;
-        right: 20%;
-    }
-
-}
-
 .navbar__links>a:hover {
     text-decoration: underline;
 }
@@ -208,12 +187,19 @@
     margin-top: 90px;
 }
 
-.third {
+#third {
     margin-top: 30px;
     background-color: rgba(245, 245, 245, 0.889);
     padding-bottom: 50px;
+}
+
+.thirdAnimate {
+    margin-top: 30px;
+    visibility:visible;
+    background-color: rgba(245, 245, 245, 0.889);
+    padding-bottom: 50px;
     animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .third__main {
@@ -245,8 +231,6 @@
 
 .third__image1 {
     box-shadow: 20px 50px 60px #888888;
-    animation-name: rtlmargin;
-    animation-duration: 1s;
 }
 
 
@@ -285,7 +269,14 @@
 
 }
 
-.fourth__image1 {
+#fourth__image1 {
+    width: 20%;
+    box-shadow: 20px 50px 60px #888888;
+    cursor: pointer;
+}
+
+
+.fourth__image1Animate {
     width: 20%;
     box-shadow: 20px 50px 60px #888888;
     animation-name: spin;
@@ -299,7 +290,13 @@
     z-index: 1;
 }
 
-.fourth__image2 {
+#fourth__image2 {
+    width: 20%;
+    box-shadow: 20px 50px 60px #888888;
+    cursor: pointer;
+}
+
+.fourth__image2Animate {
     width: 20%;
     box-shadow: 20px 50px 60px #888888;
     animation-name: spin;
@@ -312,7 +309,14 @@
     z-index: 1;
 }
 
-.fourth__image3 {
+
+#fourth__image3 {
+    width: 30%;
+    box-shadow: 20px 50px 60px #888888;
+    cursor: pointer;
+}
+
+.fourth__image3Animate {
     width: 30%;
     box-shadow: 20px 50px 60px #888888;
     animation-name: spin;
@@ -325,13 +329,19 @@
     z-index: 1;
 }
 
-.fourth__image4 {
+#fourth__image4 {
+    width: 25%;
+    box-shadow: 20px 50px 60px #888888;
+    cursor: pointer;
+}
+
+
+.fourth__image4Animate {
     width: 25%;
     box-shadow: 20px 50px 60px #888888;
     animation-name: spin;
     animation-duration: 4500ms;
 }
-
 .fourth__image4:hover {
     box-shadow: 30px 60px 40px #888888;
     cursor: pointer;
@@ -437,7 +447,26 @@
     padding-bottom: 15px;
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 600px) {
+
+        .first>img {
+            margin-left: 0;
+            width: 100%;
+        }
+    
+        .navbar__links>a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+    
+        .first__overlayText {
+            text-align: center;
+            right: 20%;
+        }
+        
     .second>h4 {
         margin-left: 0;
         margin-right: 0;
@@ -512,4 +541,64 @@
         margin-top: 20px;
         width: 100%;
     }
+}
+
+
+@media only screen and (min-width: 600px ) and (max-width: 992px) {
+
+    .first>img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .second>h4 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 25px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .fifth__stats {
+        width: 100%;
+    }
+
+    .fifth__stats > h3 {
+        color: grey;
+    }
+
+    .fifth__statsNumbers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fifth__statsNumbers1{
+        width: 100%;
+    }
+
+    .fifth__statsNumbers2{
+        width: 100%;
+    }
+
+    .fifth__statsNumbers1 > h2{
+        font-size: 45px;
+    }
+
+    .fifth__statsNumbers2 > h2{
+        font-size: 45px;
+    }
+
+    .sixth__quote > h3 {
+        font-size: 20px;
+    }
+ 
+    .third__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third__quote {
+        margin-top: 10px;
+    }
+
 }

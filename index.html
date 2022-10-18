@@ -101,7 +101,7 @@
     </div>
   </div>
 
-  <div class="third">
+  <div id="third">
     <div class="third__main">
       <div class="third__images">
         <img class="third__image1" src="./img/img/people15.jpg" />
@@ -164,10 +164,10 @@
 
   <div class="fourth">
     <div class="fourth__images">
-      <img class="fourth__image1" src="./img/img/interior37.jpg" />
-      <img class="fourth__image2" src="./img/img/people1.jpg" />
-      <img class="fourth__image3" src="./img/img/people2.jpg" />
-      <img class="fourth__image4" src="./img/img/interior29.jpg" />
+      <img id="fourth__image1" src="./img/img/interior37.jpg" />
+      <img id="fourth__image2" src="./img/img/people1.jpg" />
+      <img id="fourth__image3" src="./img/img/people2.jpg" />
+      <img id="fourth__image4" src="./img/img/interior29.jpg" />
     </div>
   </div>
 
@@ -186,6 +186,23 @@
       </h3>
     </div>
   </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 2300) {
+    document.getElementById("fourth__image1").className = "fourth__image1Animate";
+    document.getElementById("fourth__image2").className = "fourth__image2Animate";
+    document.getElementById("fourth__image3").className = "fourth__image3Animate";
+    document.getElementById("fourth__image4").className = "fourth__image4Animate";
+  }
+
+  if (document.documentElement.scrollTop > 700) {
+    document.getElementById("third").className = "thirdAnimate";
+  }
+}
+  </script>
 </body>
 
 </html>
