@@ -457,7 +457,7 @@
         .navbar__links>a {
             color: black;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 24px;
             margin-right: 5px;
             font-weight: bold;
         }
@@ -466,18 +466,52 @@
             text-align: center;
             right: 20%;
         }
+
+        .first__overlayText > p {
+            font-size: 25px;
+        }
         
+        .first__overlayText > button {
+            margin-top: 30px;
+            height:80px;
+            width: 60%;
+            font-size: 20px;
+        }
     .second>h4 {
         margin-left: 0;
         margin-right: 0;
         font-size: 25px;
+        font-weight: bold;
         padding: 5px;
         text-align: center;
+        margin-top: 120px;
     }
 
     .second__texts {
         display: flex;
         flex-direction: column;
+    }
+
+    .second__textsFirst > p {
+        font-size:  35px;
+    }
+
+    .second__textsSecond > p {
+        font-size:  35px;
+    }
+
+    .second__textsThird > p {
+        font-size:  35px;
+    }
+
+    .bordertop > p {
+        font-size:  30px;
+        text-align: center;
+    }
+
+    .bordertop > h4 {
+        font-size:  35px;
+        text-align: center;
     }
 
     .third__main {
@@ -487,6 +521,16 @@
 
     .third__quote {
         margin-top: 10px;
+    }
+
+    .third__quote > h4 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .third__quote > p {
+        font-size: 25px;
+        text-align: center;
     }
 
     .fifth {
@@ -504,6 +548,7 @@
 
     .fifth__stats>h3 {
         color: grey;
+        text-align: center;
     }
 
     .fifth__statsNumbers {
@@ -522,10 +567,23 @@
 
     .fifth__statsNumbers1>h2 {
         font-size: 40px;
+        text-align: center;
     }
 
     .fifth__statsNumbers2>h2 {
         font-size: 40px;
+        text-align: center;
+    }
+
+    .fifth__statsNumbers1>p {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .fifth__statsNumbers2>p {
+        font-size: 25px;
+        text-align: center;
     }
 
     .sixth {
