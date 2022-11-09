@@ -477,19 +477,23 @@
             width: 60%;
             font-size: 20px;
         }
-    .second>h4 {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 25px;
-        font-weight: bold;
-        padding: 5px;
-        text-align: center;
-        margin-top: 120px;
-    }
+        .second>h4 {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 30px;
+            width: 80%;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 120px;
+        }
 
     .second__texts {
         display: flex;
         flex-direction: column;
+        width:90%;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
     }
 
     .second__textsFirst > p {
@@ -502,6 +506,10 @@
 
     .second__textsThird > p {
         font-size:  35px;
+    }
+
+    .bordertop {
+        width: 90%;
     }
 
     .bordertop > p {
@@ -691,11 +699,11 @@
         font-size: 20px;
     }
 .second>h4 {
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    width: 80%;
     font-weight: bold;
-    padding: 5px;
     text-align: center;
     margin-top: 120px;
 }
@@ -703,6 +711,10 @@
 .second__texts {
     display: flex;
     flex-direction: column;
+    width:90%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
 }
 
 .second__textsFirst > p {
@@ -717,6 +729,9 @@
     font-size:  35px;
 }
 
+.bordertop {
+    width: 90%;
+}
 .bordertop > p {
     font-size:  30px;
     text-align: center;
