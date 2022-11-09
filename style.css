@@ -704,19 +704,21 @@
 .third__main {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .third__quote {
     margin-top: 10px;
+    width: 80%;
 }
 
 .third__quote > h4 {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 
 .third__quote > p {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
 
